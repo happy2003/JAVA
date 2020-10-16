@@ -2,21 +2,20 @@
 
 //•	CODE:
 import java.util.Scanner;
-public class t1
+public class arithmetic
 {
 	public static void main(String args[])
 	{
 		 Scanner readme = new Scanner(System.in);
-		 System.out.println("Enter 2 Number " );
-		int a,b,ans;
-		a = readme.nextInt();
-		b = readme.nextInt();
+		 System.out.println("Enter 2 Number: " );
+		 int a,b,ans;
+		 a = readme.nextInt();	//added by user, scanned by scanner class
+		 b = readme.nextInt();	//added by user, scanned by scanner class
 
 		 System.out.println("Enter arithmetic oprator " );
-		 char ch = readme. next().charAt(0);
-		System.out.println("\nYour Result is:\n");
-		switch(ch)
-		{
+		 char ch = readme. next().charAt(0);	//scan only one character
+		 System.out.println("\nYour Result is:\n");
+		 switch(ch){
 			case '+':ans=a+b;
 					System.out.println("Addition="+ans);
 					break;
@@ -35,7 +34,7 @@ public class t1
 						}
 					else
 						{
-							System.out.println("Can't divide by zero");
+							System.out.println("Can't divide by zero");	//if b=0
 						}
 							break;
 			default:
